@@ -1,0 +1,49 @@
+.food-contents-wrapper {
+  position: relative; /* Tambahkan wadah relatif */
+  display: flex;
+  flex-direction: column; /* Atur arah kolom */
+  align-items: center;
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+.food-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+  max-width: 80%;
+  animation: fadeIn 3s;
+}
+
+.card-listFood {
+  flex: 0 1 calc(33.33% - 20px); /* Biarkan konten makanan menyesuaikan lebar wadah */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+  margin-bottom: 90px;
+}
+
+.card-listFood-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-listFood-title{
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+footer {
+  background-color: #173334;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+  font-size: 25px;
+  font-weight: 900;
+}
